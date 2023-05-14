@@ -46,19 +46,19 @@ document.querySelectorAll(".options input").forEach((button) => {
       outputText.innerHTML = "It's a tie! 😐";
       button.style.backgroundColor = "rgb(119,136,153)";
       setTimeout(() => {
-      button.style.backgroundColor = "";}, 200);
+      button.style.backgroundColor = "";}, 250);
     } else if ((playerChoiceIndex - computerChoiceIndex + 3) % 3 === 1) {
       playerScoreCount++;
       outputText.innerHTML = "You win! 😎";
       button.style.backgroundColor = "rgb(52, 167, 52)";
       setTimeout(() => {
-      button.style.backgroundColor = "";}, 200);
+      button.style.backgroundColor = "";}, 250);
     } else {
       computerScoreCount++;
       outputText.innerHTML = "You lose! 😭";
       button.style.backgroundColor = "rgb(204, 21, 21)";
       setTimeout(() => {
-      button.style.backgroundColor = "";}, 200);
+      button.style.backgroundColor = "";}, 250);
     }
     playerScore.innerHTML = playerScoreCount;
     computerScore.innerHTML = computerScoreCount;
@@ -90,5 +90,4 @@ document.querySelectorAll(".options input").forEach((button) => {
       })
     }
   })
-
 })

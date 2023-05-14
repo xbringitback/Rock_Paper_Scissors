@@ -141,7 +141,7 @@ section {
 input[type="radio"] {
     transform: scale(2);
     accent-color: rgb(185, 156, 13);
-    margin: 0 5px;
+    margin: 0 10px;
 }
 .counter {
     text-align: center;
