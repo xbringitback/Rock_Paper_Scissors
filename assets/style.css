@@ -1,0 +1,224 @@
+@font-face {
+    font-family: poppins;
+    src: url(./fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: poppinsb;
+    src: url(./fonts/Poppins-Bold.ttf);
+}
+
+/* font */
+:root {
+    --h-size: clamp(5rem, 4vw, 6rem);
+    --m-size: clamp(1.5rem, 4vw, 3rem);
+    --p-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+h1 {
+    font-size: 6rem;
+    -webkit-text-stroke: 6px black;
+    /* text-decoration: overline white 1px; */
+}
+h2 {
+    font-size: var(--m-size);
+    text-align: center;
+}
+h3 {
+    font-size: var(--h-size);
+}
+p {
+    font-size: var(--p-size);
+    text-align: center;
+}
+
+/* general */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+html, main, body {
+    margin-bottom: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "poppinsb", Arial, Helvetica, sans-serif;
+    color: white;
+    -webkit-text-stroke: 1px black;
+
+}
+body {
+    filter: blur(0px);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+main {
+    background:url("./img/yujin-yano-KZwgVoeRIwU-unsplash.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    backdrop-filter: blur(0px);
+}
+img {
+    max-width: 100%;
+    width: 14rem;
+}
+.line {
+    width: .2rem;
+    height: 10rem;
+    background-color: white;
+}
+
+/* section */
+
+section {
+    height: 100rem;
+    width: 92rem;
+    margin:0 auto;
+    transform:translateY(15rem);
+    background: linear-gradient(400deg,
+    rgba(14, 106, 94, 0.532),
+    rgba(39, 41, 68, 0.456)),
+      url("./img/universe.png") no-repeat center;
+    background-size: cover;
+    border-radius: 10%;
+}
+
+/* headline */
+
+.headline {
+    text-align: center;
+    background-color: #000000;
+    border-radius: 5% 5% 35% 35%;
+    text-decoration: underline 3px;
+}
+
+/* score */
+
+.score {
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    margin-top: 5rem;
+}
+.player-score {
+    color: rgb(52, 167, 52);
+    text-align: center;
+    width: 20%;
+}
+.player-score p {
+    font-size: 4.5rem;
+    color: rgba(52, 167, 52, 0.572);
+}
+.computer-score {
+    color: rgb(204, 21, 21);
+    width: 20%;
+    text-align: center;
+}
+.computer-score h3 {
+    transform:translateX(-8rem);
+}
+.computer-score p {
+    color: rgba(204, 21, 21, 0.621);
+    font-size: 4.5rem;
+    transform:translateX(-2rem);
+}
+/* rounds */
+
+.rounds {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--p-size);
+}
+/* .rounds div:nth-of-type(1) {
+} */
+input[type="radio"] {
+    transform: scale(2);
+    accent-color: rgb(185, 156, 13);
+    margin: 0 5px;
+}
+.counter {
+    text-align: center;
+    display: none;
+    height: 9.4rem;
+}
+#roundcounter {
+    font-size: var(--m-size);
+}
+/* function */
+
+.gaming {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 0 5rem 0;
+}
+.match {
+    display: flex;
+    column-gap: 30rem;
+}
+#outputtext {
+    font-size: var(--m-size);
+    text-align: center;
+}
+
+/* buttons */
+.option {
+    margin-bottom: 3rem;
+}
+.rock:hover, .paper:hover, .scissors:hover, #reset-button:hover {
+    transform: scale(1.2);
+}
+
+
+input[type="button"] {
+    padding: 1.5rem 3rem;
+    background-color: rgb(185, 156, 13);
+    color: black;
+    font-size: var(--p-size);
+    border: 5px solid black;
+    border-radius: 15px;
+    margin: 0 2rem;
+    min-width: 15rem;
+    cursor: pointer;
+    
+}
+.restart {
+    text-align: center;
+}
+
+.ufo {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+  }
+  
+.ufo img {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: -50%;
+    top: -50%;
+    animation: ufo 30s ease-in-out infinite alternate;
+}
+  
+@keyframes ufo {
+    0%,100% {
+      transform: translateY(250rem) rotate(0deg);
+    }
+    25% {
+      transform: translateX(150rem) rotate(180deg);
+    }
+    50% {
+      transform: translateY(100rem) rotate(360deg);
+    }
+    75% {
+      transform: translateX(200rem) rotate(540deg);
+    }
+}
