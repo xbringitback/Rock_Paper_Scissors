@@ -15,7 +15,7 @@ let computerScoreCount = 0;
 let roundCount = 0;
 
 
-const options = ["rock", "paper", "scissors"];
+const options = ["Rock", "Paper", "Scissors"];
 
 // function bing bong
 
