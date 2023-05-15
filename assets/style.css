@@ -59,7 +59,7 @@ body {
 }
 
 main {
-    background:url("./img/universum.jpg") no-repeat center;
+    background:url("./imgs/universum.jpg") no-repeat center;
     background-size: cover;
     height: 100vh;
     backdrop-filter: blur(0px);
@@ -84,7 +84,7 @@ section {
     background: linear-gradient(400deg,
     rgba(14, 106, 94, 0.532),
     rgba(39, 41, 68, 0.456)),
-      url("./img/universe.png") no-repeat center;
+      url("./imgs/universe.png") no-repeat center;
     background-size: cover;
     border-radius: 10%;
 }

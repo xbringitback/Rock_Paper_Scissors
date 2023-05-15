@@ -15,7 +15,7 @@ let computerScoreCount = 0;
 let roundCount = 0;
 
 
-const options = ["Rock", "paper", "scissors"];
+const options = ["Rock", "Paper", "Scissors"];
 
 // function bing bong
 
@@ -37,8 +37,8 @@ document.querySelectorAll(".options input").forEach((button) => {
     const playerChoice = options[playerChoiceIndex];
     const computerChoice = options[computerChoiceIndex];
 
-    playerHand.src = `./assets/img/${playerChoice}.png`;
-    computerHand.src = `./assets/img/${computerChoice}.png`;
+    playerHand.src = `./assets/imgs/${playerChoice}.png`;
+    computerHand.src = `./assets/imgs/${computerChoice}.png`;
 
     if (playerChoiceIndex === computerChoiceIndex) {
       computerScoreCount++;
